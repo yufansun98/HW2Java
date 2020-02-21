@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="277eea10-fc62-4331-8ccb-c2702b210fda" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ub/cse/algo/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ub/cse/algo/Solution.java" afterDir="false" />
-    </list>
+    <list default="true" id="277eea10-fc62-4331-8ccb-c2702b210fda" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -74,25 +70,45 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1582135614806</updated>
-      <workItem from="1582135616599" duration="24817000" />
+      <workItem from="1582135616599" duration="25063000" />
     </task>
+    <task id="LOCAL-00001" summary="Find the stable matching between hospital and student">
+      <created>1582257969886</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1582257969886</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Find the stable matching between hospital and student">
+      <created>1582258135760</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1582258135760</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="Find the stable matching between hospital and student" />
+    <option name="LAST_COMMIT_MESSAGE" value="Find the stable matching between hospital and student" />
   </component>
   <component name="WindowStateProjectService">
     <state x="184" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582222343744">
       <screen x="0" y="23" width="1440" height="808" />
     </state>
     <state x="184" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.808@0.23.1440.808" timestamp="1582222343744" />
-    <state x="303" y="28" key="CommitChangelistDialog2" timestamp="1582257969341">
+    <state x="303" y="28" key="CommitChangelistDialog2" timestamp="1582258135417">
       <screen x="0" y="23" width="1440" height="806" />
     </state>
-    <state x="303" y="28" key="CommitChangelistDialog2/0.23.1440.806@0.23.1440.806" timestamp="1582257969341" />
+    <state x="303" y="28" key="CommitChangelistDialog2/0.23.1440.806@0.23.1440.806" timestamp="1582258135417" />
+    <state x="144" y="90" key="DiffContextDialog" timestamp="1582258118111">
+      <screen x="0" y="23" width="1440" height="806" />
+    </state>
+    <state x="144" y="90" key="DiffContextDialog/0.23.1440.806@0.23.1440.806" timestamp="1582258118111" />
     <state x="585" y="324" key="Github.ShareDialog" timestamp="1582257821593">
       <screen x="0" y="23" width="1440" height="806" />
     </state>
@@ -138,10 +154,10 @@
       <screen x="0" y="23" width="1440" height="808" />
     </state>
     <state width="1358" height="241" key="GridCell.Tab.1.right/0.23.1440.808@0.23.1440.808" timestamp="1582224002541" />
-    <state x="503" y="349" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1582257923634">
+    <state x="503" y="349" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1582258159562">
       <screen x="0" y="23" width="1440" height="806" />
     </state>
-    <state x="503" y="349" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.806@0.23.1440.806" timestamp="1582257923634" />
+    <state x="503" y="349" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.806@0.23.1440.806" timestamp="1582258159562" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
