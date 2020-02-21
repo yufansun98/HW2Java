@@ -1,7 +1,6 @@
 package ub.cse.algo;
 
-import java.util.HashMap;
-import java.util.ArrayList;
+import java.util.*;
 
 /**
  * For use in CSE 331 HW1.
@@ -44,8 +43,54 @@ public class Solution {
      * @return Your stable matches
      */
 	public ArrayList<Match> getMatches() {
-        
-        // Returns an empty ArrayList for now
-        return new ArrayList<Match>();
+		Queue<Integer> freehospital = new LinkedList<>();
+		ArrayList<ArrayList<Integer>> hpreferlist = new ArrayList<>();
+		for (int i = 1; i <= _nHospital; i++){ // need to make a queue of all slot not for all hospital
+			hpreferlist.add(_hospitalList.get(i));
+			for (int slot = 0; slot < _hospitalList.get(i).get(0); slot++){
+				freehospital.add(i);
+			}
+		}
+//		System.out.println(_studentList);
+//		System.out.println(hpreferlist);
+		ArrayList<Match> tem = new ArrayList<>();
+		ArrayList<Integer> freestudent = new ArrayList<>();
+		for (int i = 1; i <= _nStudent; i++){
+			freestudent.add(i);
+		}
+		while (freehospital.size() != 0){
+			int i = freehospital.peek();
+			for (int index = 1; index < hpreferlist.get(i-1).size(); index++){
+				if (freestudent.contains(hpreferlist.get(i-1).get(index))){
+					tem.add(new Match(i, hpreferlist.get(i-1).get(index)));
+					freestudent.remove(hpreferlist.get(i-1).get(index));
+					freehospital.remove(i);
+					break;
+				}
+				else {
+					ArrayList<Integer> spreferlist = _studentList.get(hpreferlist.get(i-1).get(index)); // the prefernce list for the student which i+1 hospital want now
+					int hnow = 0; // the number of the hospital which the studeng pair with now
+					int indexofpair = 0;
+					for (Match pair: tem) {
+						if (pair.student.equals(hpreferlist.get(i-1).get(index))){
+						hnow = pair.hospital;
+						indexofpair = tem.indexOf(pair);
+						break;
+						}
+					}
+					if (spreferlist.indexOf(i) < spreferlist.indexOf(hnow) && hnow != 0){
+						tem.remove(indexofpair);
+						tem.add(new Match(i, hpreferlist.get(i-1).get(index)));
+//						freestudent.remove(hpreferlist.get(i-1).get(index));
+						freehospital.remove(i);
+						freehospital.add(hnow);
+						break;
+					}
+				}
+			}
+		}
+//		System.out.println(freehospital);
+//		System.out.println(freestudent);
+        return tem;
 	}
 }
